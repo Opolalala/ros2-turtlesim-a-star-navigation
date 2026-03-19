@@ -23,9 +23,14 @@ sudo apt install ros-humble-turtlesim
 
 ## Installation / Setup
 ```bash
+# Clone the repository
 git clone https://github.com/Opolalala/ros2-turtlesim-a-star-navigation
+
+# Install dependencies
 cd ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
+
+# Build and source the workspace
 colcon build
 source install/setup.bash
 ```
